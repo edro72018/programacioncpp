@@ -1,3 +1,4 @@
+// La línea estaba mal escrita <isotream>
 #include <iostream>
 using namespace std;
 int main(){
@@ -14,15 +15,19 @@ cout << "6. Salir" << endl;
 cout << "Seleccione una opcion (1-6): ";
 cin >> opcion;
 switch(opcion){
-case 1:
-int num1, num2, sum;
-cout << "ingrese un numero entero" << endl;
+case 1: {
+int num1, num2;
+cout << "ingrese un numero entero: " << endl;
 cin >> num1;
-cout << "ingrese otro numero entero" << endl;
+cout << "ingrese otro numero entero: " << endl;
 cin >> num2;
 sum = num1 + num2 ;
-cout << "La suma es: " << sum << endl;
+cout << "La suma de : " << sum << endl;
 break;
+} 
+case 2:{
+break;
+} 
 }
 }while(cont);
 return 0;
